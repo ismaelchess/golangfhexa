@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/golangfhexa/domain"
+	"github.com/ismaelchess/golangfhexa/domain"
 	"github.com/pkg/errors"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -74,7 +74,7 @@ func (r *mongoRepository) Update(employee *domain.Employee) error {
 		ctx,
 		bson.M{"nouser": employee.NoUser},
 		bson.D{
-			{"$set", bson.D{{"full_name", employee.Full_name}, {"data1", employee.Data1}, {"data2", employee.data2}}},
+			{"$set", bson.D{{"full_name", employee.Full_name}, {"data1", employee.Data1}, {"data2", employee.Data2}}},
 		},
 	)
 	if err != nil {

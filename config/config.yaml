@@ -1,7 +1,7 @@
 # Database settings
 database:
   url: "mongodb://localhost:27017"
-  db: "product"
+  db: "employee"
   timeout: 5
 
 # Server settings

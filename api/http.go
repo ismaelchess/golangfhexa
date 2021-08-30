@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi"
-	"github.com/golangfhexa/domain"
+	"github.com/ismaelchess/golangfhexa/domain"
 )
 
 type handler struct {
